@@ -356,24 +356,42 @@ section{
     text-align: center;
     text-decoration: underline;
     color: black;
-    
 }
 .tool-bar2 li{
     margin: 100px;
 }
-.table1{
-    background-color: black;
-    height: 300px;
+.all-list{
+    background-color: #2A2C2E;
 }
-.table1 table{
-    margin: 70px;
-    padding: 20px
+.row{
+    margin-left: 90px;
 }
-.table1 a{
+.column{
+    display: table;
+    padding: 40px;
+    text-align: left;
     color: white;
-    font-size: 18px;
-    padding: 56px;
+    display: table-cell;
+}
+.column a{
+    font-size: 16px;
+    color: white;
+    line-height: 1.8;
+    font-family: sans;
+    padding: 10px;
 }
 .line4{
-    margin-right: 70px;
+    margin-right: 90px;
+    margin-left: 110px;
+}
+.logo-last {
+    margin-left: 100px;
+    height: 50px;
+}
+.logo-last img{
+    height: 25px;
+}
+.logo-last span{
+    margin-left: 922px;
+    color: white;
 }
