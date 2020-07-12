@@ -21,10 +21,10 @@
     display: flex;
     list-style:none;
     background-color: purple;
-    font-family:fantasy;
+    font-family: sans-serif;
 }
 .menu-bar ul li a{
-    width:110px;
+    width: 110px;
     margin: 15px;
     padding: 0.5px;
     text-align: center;
@@ -65,7 +65,7 @@
     height: 40px;
 }
 .tool-bar ul li{
-    width:111px;
+    width: 111px;
     margin: 10px;
     padding: 0.5px;
     text-align: center;
@@ -87,7 +87,10 @@ section{
     overflow: hidden;
     margin-top: 80px;
 }
-.rightside img{width: 600px; height: 500px; }
+.rightside img{
+    width: 600px; 
+    height: 500px; 
+}
 
 .rightside{
     width: 65%;
