@@ -1,18 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
 }
-
 .heading{ 
-    width: auto;
+    width: none;
     height: 30px;
     display: block;
-    background-color: #D8D8D8; 
+    background-color: #D8D8D8;
     text-align: center;
 }
-
 .menu-bar{
     text-align: center;
     width: auto;
@@ -24,7 +20,7 @@
     font-family: sans-serif;
 }
 .menu-bar ul li a{
-    width: 110px;
+    width:110px;
     margin: 15px;
     padding: 0.5px;
     text-align: center;
@@ -32,7 +28,7 @@
     color: white;
 }
 .menu-bar ul ul{
-   margin-left: 500px;
+   margin-left: 400px;
 }
 .nav-text{
     margin-left: 500px;
@@ -47,117 +43,97 @@
     padding: 0 10px;
 }
 
-.tool-bar{
+.upper-head{
     margin: 15px;
     text-align: center;
     width: auto;
 }
-.tool-bar ul{
+.upper-head ul{
     display: flex;
     margin-left: 50px;
-    list-style: none;
     background-color: white;
+    text-decoration: none;
 }
-.tool-bar ul a{
-    text-decoration-color: none;
+.upper-head img{
+    height: 35px;
 }
-.tool-bar img{
-    height: 40px;
-}
-.tool-bar ul li{
-    width: 111px;
+.upper-head ul li{
+    width:111px;
     margin: 10px;
-    padding: 0.5px;
-    text-align: center;
-    display: inline-block;
+    display: inline-grid;
     color: black;
     font-family: sans-serif;
 }
-.tool-bar ul li a{
+.upper-head ul li a{
     color: black;
 }
 section{
     display: flex;
     height: 500px;
 }
-
-.leftside{
-    width: 35%;
-    height: auto;
-    overflow: hidden;
-    margin-top: 80px;
-}
-.rightside img{
-    width: 600px; 
-    height: 500px; 
-}
-
-.rightside{
+.left-header{
     width: 65%;
     height: 200px;
     overflow: hidden;
-    margin-top: 100px;
-    color: purple;
-    text-align: left;
+    margin-top: 85px;
     padding: 60px;
 }
-.rightside p{
+.left-header h1 p{
     font-size: 80px;
     font-stretch: 100%;
     font-style: normal;
+    color: purple;
+    text-align: left;
 }
-.rightside p1{
+.left-header p{
     color: black;
     font-size: 17px;
     font-weight: 20;
     font-family: serif;
-    text-align: center;
 }
-.line hr{
-    margin: 55px;
+.right-header{
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+.left-header img{
+    width: 600px; 
+    height: 500px; 
 }
 .req{
     margin: 70px;
-    height: 40px
+    height: 40px;
+    line-height: 2.5;
 }
 .req p{
-    font-family: serif;
-    font-size: 15px;
-    font-weight: 5px;
-    height: 70px
-}
-.req p1{
     font-family: serif;
     font-size: 30px;
     font-weight: 10px;
     color: purple;
 }
-.top-form{
+.name{
     margin: 70px;
     font-size: 18px;
-    font-weight: 200px;
+    height: 200px;
+    line-height: 2.5;
 }
-.bottom-form{
-    margin: 70px;
-    font-size: 18px;
-    height: 50px;
-}
-.top-form input{
+.name input{
     min-width:65%;
     height: 50px;
     font-size: 18px;
     border-radius: 5px;
 }
-.bottom-form input{
-    min-width:65%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.check{
+.contact-check{
     margin: 70px;
+    line-height: 2rem;
+    font-size: 18px;
 }
-.line2{
+.hide-phone{
+    display: none;
+}
+.line{
     margin-left: 70px;
     margin-right: 470px;
 }
@@ -168,157 +144,61 @@ section{
     color: purple;
     margin: 70px;
 }
-.form1{
+.company{
     margin: 70px;
     font-size: 18px;
     font-weight: 200px;
+    line-height: 2.8;
 }
-.form2{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-.form3{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-.form4{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-.form5{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-.form6{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-.form7{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-.form1 input{
+.company input{
     min-width:65%;
     height: 50px;
     font-size: 18px;
     border-radius: 5px;
 }
-.form2 input{
-    min-width:65%;
+.company a input{
+    min-width:30%;
     height: 50px;
     font-size: 18px;
     border-radius: 5px;
+    white-space:pre-wrap;
 }
-.form3 input{
-    min-width:65%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.form4 input{
-    min-width:65%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.form5 input{
-    min-width:65%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.form6 input{
-    min-width:65%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.form7 input{
-    min-width:32%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.line3{
-    margin-left: 70px;
-    margin-right: 470px;
-}
-.telus2{
+.issue{
     font-family: serif;
     font-size: 30px;
     font-weight: 10px;
     color: purple;
     margin: 70px;
 }
-.form8{
+.registration-check{
     margin: 70px;
-    font-size: 18px;
     font-weight: 200px;
+    line-height: 2rem;
 }
-.form9{
-    margin: 70px;
+.registration-check li input{
     font-size: 18px;
-    font-weight: 200px;
+    min-width: 65%;
 }
-.form10{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-.form11{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-
-.form8 input{
-    min-width:65%;
-    height: 50px;
+.hidden input{
     font-size: 18px;
     border-radius: 5px;
+    min-width: 65%;
+    height:50px;
+    line-height: 2rem;
 }
-.form9 input{
-    min-width:65%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
+.hidden-phone{
+    display: none;
 }
-.form10 input{
-    min-width:65%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.form11 input{
-    min-width:65%;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.check2{
-    margin: 70px;
-    font-size: 18px;
-    font-weight: 200px;
-}
-.line4{
-    margin-left: 70px;
-    margin-right: 470px;
-}
-.telus3{
+.hidden-email{
+    display: none;   
+} 
+.detail{
     font-family: serif;
     font-size: 30px;
     font-weight: 10px;
     color: purple;
     margin: 70px;
-}
-.telus3 comment{
-    font-size: 18px;
+    line-height: 2.8;
 }
 .privacy{
     margin: 70px;
@@ -337,28 +217,28 @@ section{
     text-align: center;
     font-size: 20px;
     text-decoration-color: white;
-    text-decoration-color: white;
     color: white;
     border-radius: 8px;
 }
-.call{
+.help{
     margin: 70px;
 }
-.call a{
+.help a{
     text-decoration: underline;
     color: black;
 }
-.tool-bar2{
+.feedback{
     background-color: aliceblue;
     height: 40px;
 }
-.tool-bar2 a{
+.feedback a{
     text-align: center;
     text-decoration: underline;
     color: black;
 }
-.tool-bar2 li{
+.feedback p{
     margin: 100px;
+    height: 5px;
 }
 .all-list{
     background-color: #2A2C2E;
@@ -379,8 +259,9 @@ section{
     line-height: 1.8;
     font-family: sans;
     padding: 10px;
+    text-decoration-line: none;
 }
-.line4{
+.last-line{
     margin-right: 90px;
     margin-left: 110px;
 }
