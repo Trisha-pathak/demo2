@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,11 +60,11 @@
     <nav>
     <div color="white" class="menu-bar">  
         <ul>
-            <li><a href="https://www.telus.com/?linktype=ge-supernav">Personal</a></li>
-            <li><a href="https://www.telus.com/business/small?linktype=ge-supernav">Business</a></li>
-            <li><a href="https://www.telus.com/health?linktype=ge-supernav">Health</a></li>
-            <li><a href="https://www.telus.com/why-telus?linktype=ge-supernav">Why TELUS</a></li>
-                <ul>    
+            <li><p><a href="https://www.telus.com/?linktype=ge-supernav"> Personal</a></p></li>
+            <li><a href="https://www.telus.com/business/small?linktype=ge-supernav"> Business</a></li>
+            <li><a href="https://www.telus.com/health?linktype=ge-supernav"> Health</a></li>
+            <li><a href="https://www.telus.com/why-telus?linktype=ge-supernav"> Why TELUS</a></li>
+                <ul> 
                     <li><a>EN</a></li>
                     <li><a>BC</a></li>
                 </ul>
@@ -86,20 +87,19 @@
         </ul>     
     </div>
     <hr>
+    </nav>
     <section>  
         <div class="left-header">
-            <h1><p style = "Helvetica Neue", Helvetica, Arial, sans-serif>Report a TELUS</br>public Wi-Fi issue</p></h1></br>
-            <p>Please complete this form to report #TELUS public Wi-Fi issues. It is important to provide as much detail as </br>possible to aid our investigation. Use this form only to report issues related to </br>the TELUS public Wi-Fi network.</p>
+            <h1><p>Report a TELUS</br>public Wi-Fi issue</p></h1></br>
+            <li><p>Please complete this form to report #TELUS public Wi-Fi issues. It is important to provide as</br>much detail as possible to aid our investigation. Use this form only to report issues related to </br>the TELUS public Wi-Fi network.</p></li>
         </div>
         <div class="right-header">
             <img src="images/panda.jpg"> 
         </div>
     </section>
-    <div class="line">
-        <hr>
-    </div>
+    <hr>
     <div class="req">
-        *Required
+        <span>*Required</span>
         <p>Tell us a bit about yourself</p>
     </div>
     <div class="name">
@@ -109,9 +109,9 @@
         <p><input type="text" id="lname" name="lastname"></p>
     </div>
     <div class="contact-check">
-        <p><input type="checkbox" name="chkbox" id= "phone" onClick="hide()"/><label for="phone">I would like to be contacted by TELUS for technical support.</label></p>
+        <p><input type="checkbox"name="chkbox" id= "phone" onClick="hide()"/><label> I would like to be contacted by TELUS for technical support.</label></p>
         <div class="hidden">
-            <p><label class="hide-phone"> Phone</label></br><input type= "number" name="name" class="hide-phone" /></p>
+            <p><label class="hide-phone">Phone</label></br><input type= "integer" name="phone" class="hide-phone" /></p>
             <p><label class="hide-phone">Please provide the phone number where you like to be contacted.</label></p>
         </div>
     </div>
@@ -121,17 +121,17 @@
     </div>
     <div class="company">
         <p><label for="cmyname">Company name</label></p>
-        <p><input type="text" id="fname" name="companyname"></p>
+        <p><input type="text" id="c-name" name="companyname"></p>
         <p><label for="cmpnyphn">Company phone number</label></p>
-        <p><input type="text" id="fname" name="cmpnyphnname"></p>
+        <p><input type="text" id="c-phone" name="cmpnyphnname"></p>
         <p><label for="exp">Where did you experience the issue</label></p>
-        <p><input type="text" id="fname" name="experience"></p>
+        <p><input type="text" id="experience" name="experience"></p>
         <p><label for="city">City*</label></p>
-        <p><input type="text" id="fname" name="cityname"></p>
+        <p><input type="text" id="city" name="cityname"></p>
         <p><label for="pro">Province*</label></p>
-        <p><input type="text" id="fname" name="province" placeholder="Province"></p>
+        <p><input type="text" id="province" name="province" placeholder="Province"></p>
         <p><label for="date">Date*</label></p>
-        <p><input type="integer" id="fname" name="date" placeholder="Date"></p>
+        <p><input type="integer" id="date" name="date" placeholder="Date"></p>
         <p><label for="date">Time</label></p>
         <a><input type="integer" id="hour" name="hr" placeholder="HH">
             <input type="integer" id="minute" name="min" placeholder="MM"></a>
@@ -144,11 +144,11 @@
         <p><label for="network">Wi-Fi network name or SSID*</label></p>
         <p><input type="text" id="wifi-netwrok" name="wifi" placeholder="Choose a netwrok for SSID"></p>
         <p><label for="add">Device Wi-Fi MAC address*</label></p>
-        <p><input type="text" id="fname" name="address"></p>
+        <p><input type="text" id="address" name="address"></p>
         <p><label for="date">Device & OS type</label></p>
-        <p><input type="integer" id="fname" name="date" placeholder="Choose device&OS"></p>
+        <p><input type="integer" id="type" name="date" placeholder="Choose device&OS"></p>
         <p><label for="issue">Issue type*</label></p>
-        <p><input type="text" id="fname" name="issuetype" placeholder="Choose issue"></p>
+        <p><input type="text" id="issue" name="issuetype" placeholder="Choose issue"></p>
     </div>
     <div class="registration-check">
         <p>Email address or SMS number used for registration</p>
@@ -167,7 +167,7 @@
     <div class="privacy">
         For more information about TELUS privacy commitment please visit -
         <a href="https://www.telus.com/en/about/privacy">TELUS privacy centre.</a></br></br>
-        <input type="submit" value="Review Submission">
+        <button>Review Submission</button>
     </div>
     <div class="help">
         You can also get help for TELUS Public Wi-Fi from our <a href="https://www.telus.com/en/qc/support/article/telus-wifi-public-hotspots">FAQ</a>, or by calling 1-855-200-9434 (Wi-Fi).
@@ -223,4 +223,3 @@
     </footer>
 </body>
 </html>
-                
