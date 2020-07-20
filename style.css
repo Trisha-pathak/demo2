@@ -52,7 +52,6 @@
     color: white;
     padding: 0 10px;
 }
-
 .upper-head{
     margin: 15px;
     text-align: center;
@@ -86,7 +85,7 @@ section{
     overflow: hidden;
     margin-top: 85px;
     padding: 60px;
-    padding-left: 80px;
+    padding-left: 120px;
 }
 .left-header h1 p{
     font-style: normal;
@@ -121,6 +120,7 @@ section{
     margin: 70px;
     height: 40px;
     line-height: 2.5;
+    padding-left: 120px;
 }
 .req span{
     color: #54595F;
@@ -129,13 +129,14 @@ section{
     font-family: serif;
     font-size: 30px;
     font-weight: 10px;
-    color: #4B286D;
+    color: #4B286D
 }
 .name{
     margin: 70px;
     font-size: 18px;
     height: 150px;
     line-height: 2.5;
+    padding-left: 120px;
 }
 .name input{
     min-width:60%;
@@ -146,9 +147,10 @@ section{
 }
 .contact-check{
     margin: 70px;
+    padding-left: 120px;
     line-height: 2rem;
     font-size: 18px;
-    line-height: 2.5;
+    line-height: 2;
 }
 .contact-check input{
     min-width: 15px;
@@ -161,23 +163,25 @@ section{
     display: none;
 }
 .line{
-    margin-left: 70px;
-    margin-right: 470px;
+    margin-left: 40px;
+    padding-left: 120px;;
+    margin-right: 350px;
     color: #54595F;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .telus{
     font-family: serif;
     font-size: 30px;
     font-weight: 10px;
     color: #4B286D;
-    margin: 70px;
-    height: 10px;
 }
 .company{
     margin: 70px;
+    padding-left: 120px;
     font-size: 18px;
     font-weight: 200px;
-    line-height: 2.8;
+    line-height: 2.2;
 }
 .company input{
     min-width:60%;
@@ -198,17 +202,20 @@ section{
     font-size: 30px;
     font-weight: 10px;
     color: #4B286D;
-    margin: 70px;
 }
 .registration-check{
     margin: 70px;
+    padding-left: 120px;
     font-weight: 100px;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 .registration-check li input{
     font-size: 18px;
     min-width: 60%;
     color: #54595F;
+}
+.line-regis{
+    padding-right: 290px;
 }
 .hidden input{
     font-size: 18px;
@@ -230,10 +237,12 @@ section{
     font-weight: 10px;
     color: #4B286D;
     margin: 70px;
-    line-height: 2.8;
+    padding-left: 120px;
+    line-height: 1.7;
 }
 .privacy{
     margin: 70px;
+    padding-left: 120px;
     font-size: 18px;
     font-weight: 200px;
     color: #54595F;
@@ -259,6 +268,7 @@ section{
 }
 .help{
     margin: 70px;
+    padding-left: 120px;
     color: #54595F;
 }
 .help a{
@@ -268,6 +278,7 @@ section{
 .feedback{
     background-color: aliceblue;
     height: 40px;
+    padding-left: 140px;
 }
 .feedback a{
     text-align: center;
@@ -282,6 +293,7 @@ section{
 }
 .all-list{
     background-color: #2A2C2E;
+    padding-left: 50px;
 }
 .row{
     margin-left: 90px;
@@ -313,6 +325,9 @@ section{
     height: 25px;
 }
 .logo-last span{
-    margin-left: 922px;
+    margin-left: 870px;
     color: white;
+}
+.line-height{
+    line-height: 1.5;
 }
