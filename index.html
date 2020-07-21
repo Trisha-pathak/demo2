@@ -7,7 +7,7 @@
         initial-scale=1,">
     <link rel="stylesheet" href="style.css"/> 
     <script type="text/javascript">
-        function hide(){
+        function hidephone(){
             var checkbox = document.getElementById("phone");
             var hiddeninputs = document.getElementsByClassName("hide-phone")
             
@@ -110,7 +110,7 @@
         <p><input type="text" id="lname" name="lastname"></p>
     </div>
     <div class="contact-check">
-        <p><input type="checkbox"name="chkbox" id= "phone" onClick="hide()"/><label> I would like to be contacted by TELUS for technical support.</label></p>
+        <p><input type="checkbox"name="chkbox" id= "phone" onClick="hidephone()"/><label> I would like to be contacted by TELUS for technical support.</label></p>
         <div class="hidden">
             <p><label class="hide-phone">Phone</label></br><input type= "integer" name="phone" class="hide-phone" /></p>
             <p><label class="hide-phone">Please provide the phone number where you like to be contacted.</label></p>
@@ -160,8 +160,8 @@
             <p><label class="hidden-email"> Email</label></br><input type="email" name="mail" class="hidden-email"/></p>
             <p><label class="hidden-phone"> Phone</label></br><input type= "number" name="name" class="hidden-phone"/></p>
         </div>
-        <div class="line-regis"><hr></div>
     </div>
+    <div class="line-regis"><hr></div>
     <div class="detail">
         <p>Provide any additional details here</p>
         <p><textarea cols="105" rows="15" name="detail"></textarea></p>
