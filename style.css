@@ -244,19 +244,19 @@ section{
     color: black;
 }
 .privacy button{
-    background-color: darkgreen;
+    background-color: #2B8000;
     cursor: pointer;
     height: 3.5rem;
     min-width:18%;
     text-align: center;
     font-size: 1.1rem;
-    color: white;
+    color: #FFFFFF;
     border-radius: 8px;
-    border: 2px solid darkgreen;
+    border: 2px solid #2B8000;
 }
 .privacy button:hover{
-    background-color: white;
-    color: darkgreen;
+    background-color: #FFFFFF;
+    color: #2B8000;
 }
 .help{
     margin: 3rem;
@@ -295,12 +295,12 @@ section{
     display: table;
     padding: 2rem;
     text-align: left;
-    color: white;
+    color: #FFFFFF;
     display: table-cell;
 }
 .column a{
     font-size: 1.1rem;
-    color: white;
+    color: #FFFFFF;
     line-height: 1.8;
     font-family: sans;
     padding: 1rem;
@@ -320,7 +320,7 @@ section{
 }
 .logo-last span{
     margin-left: 53rem;
-    color: white;
+    color: #FFFFFF;
 }
 .line-height{
     line-height: 1.5;
