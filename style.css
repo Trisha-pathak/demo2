@@ -22,7 +22,7 @@
     padding-left: 200px;
 }
 .menu-bar ul li p{
-    background-color: white;
+    background-color: #FFFFFF;
     height: 2.2rem;
 }
 .menu-bar ul li p a{
@@ -32,7 +32,7 @@
     margin: 1rem;
     text-align: center;
     display: inline-block;
-    color: white;
+    color: #FFFFFF;
     line-height: 0.2;
     text-decoration-line: none;
 }
@@ -47,7 +47,7 @@
 }
 .nav-text a{
     text-align: center;
-    color: white;
+    color: #FFFFFF;
     padding: 0 10px;
 }
 .upper-head{
@@ -58,7 +58,7 @@
 .upper-head ul{
     display: flex;
     margin-left: 5rem;
-    background-color: white;
+    background-color: #FFFFFF;
     text-decoration: none;
 }
 .upper-head img{
@@ -137,7 +137,7 @@ section{
     height: 3rem;
     font-size: 1.1rem;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #2A2C2E;
 }
 .contact-check{
     margin-left: 3.3rem;
@@ -182,14 +182,14 @@ section{
     height: 3rem;
     font-size: 1.1rem;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #2A2C2E;
 }
 .company a input{
     min-width:29.8%;
     height: 3rem;
     font-size: 1.1rem;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #2A2C2E;
 }
 .issue{
     font-family: serif;
@@ -217,7 +217,7 @@ section{
     min-width: 60%;
     height: 3rem;
     line-height: 2rem;
-    border: 1px solid black;
+    border: 1px solid #2A2C2E;
 }
 .hidden-phone{
     display: none;
@@ -241,7 +241,7 @@ section{
 }
 .privacy a{
     text-decoration: underline;
-    color: black;
+    color: #2A2C2E;
 }
 .privacy button{
     background-color: #2B8000;
