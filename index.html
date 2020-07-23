@@ -7,7 +7,7 @@
         initial-scale=1,">
     <link rel="stylesheet" href="style.css"/> 
     <script type="text/javascript">
-        function hidephone(){
+        function hide(){
             var checkbox = document.getElementById("phone");
             var hiddeninputs = document.getElementsByClassName("hide-phone")
             
@@ -22,7 +22,7 @@
         }
         function hide_email(){
             var checkbox = document.getElementById("chk-email");
-            var hiddeninputs = document.getElementsByClassName("hidden-email");
+            var hiddeninputs = document.getElementsByClassName("hide-mail");
             
             for(var i = 0; i != hiddeninputs.length; i++){
                 if(checkbox.checked){
@@ -35,7 +35,7 @@
         }
         function hide_phone(){
             var checkbox = document.getElementById("chk-phone");
-            var hiddeninputs = document.getElementsByClassName("hidden-phone")
+            var hiddeninputs = document.getElementsByClassName("hide-phn")
             
             for(var i = 0; i!= hiddeninputs.length; i++){
                 if(checkbox.checked){
@@ -51,31 +51,33 @@
 <body>
     <header id="ge-header">
         <div class="heading">
-            <a>
+            <p>
                 COVID-19: Updates affecting customer service, roaming, data overages, and store closures
-            </a>
+            </p>
         </div>
     </header>
     <nav>
     <div color="white" class="menu-bar">  
         <ul>
-            <li><p><a href="https://www.telus.com/?linktype=ge-supernav"> Personal</a></p></li>
+            <li><span><a href="https://www.telus.com/?linktype=ge-supernav"> Personal</a></span></li>
             <li><a href="https://www.telus.com/business/small?linktype=ge-supernav"> Business</a></li>
             <li><a href="https://www.telus.com/health?linktype=ge-supernav"> Health</a></li>
             <li><a href="https://www.telus.com/why-telus?linktype=ge-supernav"> Why TELUS</a></li>
                 <ul> 
-                    <li><a>EN</a></li>
-                    <li><a>BC</a></li>
+                    <li><a href="https://ww.telus.com/login?linktype=gr-supernav">Log in</a></li>
+                    <li><a href="#">EN</a>
+                    </li>
+                    <li><a href="#">BC</a></li>
                 </ul>
         </ul>      
     </div> 
     <div class="upper-head">
         <ul>
             <a href="https://www.telus.com/en/bc/">
-                <img src="//images.ctfassets.net/fikanzmkdlqn/3yUnySNpS8IS4CeyUeWgeg/5bcfa9c592acfe591f26d85f6820fa5f/Logo_TELUS.svg"/>
+                <img src="//images.ctfassets.net/fikanzmkdlqn/3yUnySNpS8IS4CeyUeWgeg/5bcfa9c592acfe591f26d85f6820fa5f/Logo_TELUS.svg" alt=" Telus logo">
             </a>
             <div class="heading-objects">
-                <li> <a role="button">Mobility</a></li> 
+                <li><a role="button">Mobility</a></li> 
                 <li><a role="button">Internet</a></li>
                 <li><a role="button">TV Bundles</a></li>
                 <li><a role="button">Home Phone</a></li>
@@ -89,11 +91,11 @@
     </nav>
     <section>
         <div class="left-header">
-            <h1><p>Report a TELUS</br>public Wi-Fi issue</p></h1></br>
-            <li><p>Please complete this form to report #TELUS public Wi-Fi issues. It is important to provide as</br>much detail as possible to aid our investigation. Use this form only to report issues related to </br>the TELUS public Wi-Fi network.</p></li>
+            <h1>Report a TELUS</br>public Wi-Fi issue</h1></br>
+            <p>Please complete this form to report #TELUS public Wi-Fi issues. It is important to provide as</br>much detail as possible to aid our investigation. Use this form only to report issues related to </br>the TELUS public Wi-Fi network.</p>
         </div>
         <div class="right-header">
-            <img src="panda.jpg"> 
+            <img src="images/panda.jpg" alt="for decoration"> 
         </div>
     </section>
     <div class="last-line">
@@ -110,9 +112,10 @@
         <p><input type="text" id="lname" name="lastname"></p>
     </div>
     <div class="contact-check">
-        <p><input type="checkbox"name="chkbox" id= "phone" onClick="hidephone()"/><label> I would like to be contacted by TELUS for technical support.</label></p>
+        <p><input type="checkbox" name="chkbox" id="phone" onClick="hide()"/><label> I would like to be contacted by TELUS for technical support.</label></p>
         <div class="hidden">
-            <p><label class="hide-phone">Phone</label></br><input type= "integer" name="phone" class="hide-phone" /></p>
+            <p><label class="hide-phone">Phone</label>
+            <p><input type= "integer" name="phone" class="hide-phone" /></p>
             <p><label class="hide-phone">Please provide the phone number where you like to be contacted.</label></p>
         </div>
     </div>
@@ -157,11 +160,12 @@
         <p><input type="checkbox" name="chkbox" id= "chk-email" onClick="hide_email()"/><label for="chk-email"> Email</label></p>
         <p><input type="checkbox" name="chkbox" id= "chk-phone" onClick="hide_phone()"/><label for="chk-phone"> Phone</label></p>
         <div class="hidden">
-            <p><label class="hidden-email"> Email</label></br><input type="email" name="mail" class="hidden-email"/></p>
-            <p><label class="hidden-phone"> Phone</label></br><input type= "number" name="name" class="hidden-phone"/></p>
+            <p><label class="hide-mail"> Email</label></br><input type="email" name="mail" class="hide-mail"/></p>
+            <p><label class="hide-phn"> Phone</label></br><input type= "number" name="name" class="hide-phn"/></p>
         </div>
+        
     </div>
-    <div class="line-regis"><hr></div>
+    <div class="line"><hr></div>
     <div class="detail">
         <p>Provide any additional details here</p>
         <p><textarea cols="105" rows="15" name="detail"></textarea></p>
