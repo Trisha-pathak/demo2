@@ -5,11 +5,10 @@
 .heading{ 
     width: none;
     height: 2.5rem;
-    display: block;
     background-color: #D8BFD8;
     text-align: center;
 }
-.heading a{
+.heading p{
     line-height: 2.5;
     color: #4B286D;
 }
@@ -18,14 +17,14 @@
     list-style: none;
     background-color: #4B286D;
     font-family: sans-serif;
-    height: 2.2rem;
-    padding-left: 200px;
+    height: 2.5rem;
+    padding-left: 12rem;
 }
-.menu-bar ul li p{
+.menu-bar ul span{
     background-color: #FFFFFF;
-    height: 2.2rem;
+    padding: 1rem;
 }
-.menu-bar ul li p a{
+.menu-bar ul li span a{
     color: #4B286D;
 }
 .menu-bar ul li a{
@@ -33,14 +32,13 @@
     text-align: center;
     display: inline-block;
     color: #FFFFFF;
-    line-height: 0.2;
-    text-decoration-line: none;
+    line-height: 1rem;
+    text-decoration-line: none
 }
 .menu-bar ul ul{
-   margin-left: 25rem;
+   margin-left: 20rem;
 }
 .nav-text{
-    display: flex;
     padding: 0.5px;
     text-align: center;
     display: inline-block;
@@ -57,17 +55,17 @@
 }
 .upper-head ul{
     display: flex;
-    margin-left: 5rem;
+    margin-left: 2rem;
     background-color: #FFFFFF;
-    text-decoration: none;
 }
 .upper-head img{
     height: 2.5rem;
+    padding-right: 1rem;
 }
 .upper-head ul li{
     width: 7rem;
     margin: 1rem;
-    display: inline-grid;
+    display: inline-flex;
     font-family: sans-serif;
 }
 .upper-head ul li a{
@@ -80,36 +78,26 @@ section{
 .left-header{
     width: 55rem;
     height: 500rem;
-    overflow: hidden;
     margin-top: 8rem;
     padding: 3rem;
     padding-left: 11rem;
 }
-.left-header h1 p{
-    font-style: normal;
+.left-header h1{
     font-family: sans-serif;
     font-size: 4.5rem;
     color: #4B286D;
     text-align: left;
-    font-weight: 1;
+    font-weight: 100;
 }
-.left-header li{
-    list-style: none;
-}
-.left-header li p{
+.left-header p{
     color: #54595F;
     font-weight: 1rem;
-    font-family: sans-serif;
     line-height: 1.5rem;
 }
 .right-header{
     width: 30rem;
     margin-top: 10rem;
     margin-right: 6rem;
-}
-.left-header img{
-    width: 600px; 
-    height: 500px; 
 }
 .req{
     margin: 1rem;
@@ -133,21 +121,17 @@ section{
     padding-left: 8rem;
 }
 .name input{
-    min-width:60%;
+    min-width: 43rem;;
     height: 3rem;
     font-size: 1.1rem;
     border-radius: 5px;
     border: 1px solid #2A2C2E;
 }
 .contact-check{
-    margin-left: 3.3rem;
+    margin-left: 3.5rem;
     padding-left: 8rem;
-    line-height: 2rem;
     font-size: 1.1rem;
-    line-height: 2;
-}
-.contact-check input{
-    min-width: 15px;
+    line-height: 2rem;
 }
 .contact-check label{
     color: #54595F;
@@ -178,14 +162,14 @@ section{
     line-height: 2.6;
 }
 .company input{
-    min-width:60%;
+    min-width: 43rem;;
     height: 3rem;
     font-size: 1.1rem;
     border-radius: 5px;
     border: 1px solid #2A2C2E;
 }
 .company a input{
-    min-width:29.8%;
+    min-width: 21.3rem;
     height: 3rem;
     font-size: 1.1rem;
     border-radius: 5px;
@@ -203,8 +187,8 @@ section{
     line-height: 2.7rem;
 }
 .registration-check li input{
-    font-size: 1.1rem;
-    min-width: 60%;
+    font-size: 1rem;
+    min-width: 43rem;
     color: #54595F;
 }
 .line-regis{
@@ -214,15 +198,15 @@ section{
 .hidden input{
     font-size: 1.1rem;
     border-radius: 5px;
-    min-width: 60%;
+    min-width: 43rem;
     height: 3rem;
     line-height: 2rem;
     border: 1px solid #2A2C2E;
 }
-.hidden-phone{
+.hide-phn{
     display: none;
 }
-.hidden-email{
+.hide-email{
     display: none;   
 } 
 .detail{
@@ -268,7 +252,7 @@ section{
     color: #4B286D;
 }
 .feedback{
-    background-color: aliceblue;
+    background-color: #F7F7F8;
     height: 2rem;
     padding-left: 6rem;
 }
@@ -292,7 +276,6 @@ section{
     margin-left: 7rem;
 }
 .column{
-    display: table;
     padding: 2rem;
     text-align: left;
     color: #FFFFFF;
