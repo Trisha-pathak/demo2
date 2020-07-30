@@ -14,7 +14,6 @@ $feedbackcolor: #F7F7F8;
 body {
   margin: 0;
   padding: 0;
-  height: auto;
 }
 .heading {
   height: 2.5rem;
@@ -76,7 +75,7 @@ body {
 }
 section{
   display: $style;
-  height: 35rem;
+  height: 40rem;
 }
 .left-header{
   width: 55rem;
@@ -105,7 +104,7 @@ section{
 .req{
   margin: 1rem;
   height: 40px;
-  line-height: 2.5;
+  line-height: 1rem;
   padding-left: 10rem;
   padding-top: 2rem;
 }
@@ -116,6 +115,7 @@ section{
   font-family: serif;
   font-size: 1.8rem;
   color: $color;
+  line-height: 3rem;
 }
 .name{
   margin: 3.3rem;
