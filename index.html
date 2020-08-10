@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Telus International</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0," />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        COVID-19: Updates affecting customer service, roaming, data overages, and store closures
+    </div>
+    <nav>
+        <div class="navbar-links">
+            <ul>
+                <li><a class="active" href="https://www.telus.com/?linktype=ge-supernav"> Personal</a></li>
+                <li><a href="https://www.telus.com/business/small?linktype=ge-supernav"> Business</a></li>
+                <li><a href="https://www.telus.com/health?linktype=ge-supernav"> Health</a></li>
+                <li><a href="https://www.telus.com/why-telus?linktype=ge-supernav"> Why TELUS</a></li>
+                <ul>
+                    <li><a href="#">BC</a></li>
+                    <li><a href="#">EN</a></li>
+                    <li><a href="https://ww.telus.com/login?linktype=gr-supernav">Log in</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="upper-head">
+            <ul>
+
+                <li><img src="//images.ctfassets.net/fikanzmkdlqn/3yUnySNpS8IS4CeyUeWgeg/5bcfa9c592acfe591f26d85f6820fa5f/Logo_TELUS.svg"
+                        alt="Telus logo"></li>
+                <li><a role="button">Mobility</a></li>
+                <li><a role="button">Internet</a></li>
+                <li><a role="button">TV Bundles</a></li>
+                <li><a role="button">Home Phone</a></li>
+                <li><a role="button">Home Security</a></li>
+                <li><a href="https://www.telus.com/mobility/content/my-telus?linktype=ge-mainnav">My TELUS</a></li>
+                <li><a href="https://www.telus.com/en/bc/support?linktype=ge-mainnav">Support</a></li>
+                <form>
+                    <input type="text" name="search" placeholder="Search TELUS.com" alt="Disabled Search Icon">
+                </form>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <section>
+        <div class="left-header">
+            <h1>Report a TELUS</br>public Wi-Fi issue</h1></br>
+            <p>Please complete this form to report #TELUS public Wi-Fi issues. It is important to provide
+                as</br>much
+                detail as possible to aid our investigation. Use this form only to report issues related to </br>the
+                TELUS public Wi-Fi network.
+            </p>
+        </div>
+        <div class="right-header">
+            <img src="panda.jpg" alt="for decoration">
+        </div>
+    </section>
+    <div class="line">
+        <hr>
+    </div>
+
+    <div id="container">
+        <div class="req">
+            *Required
+        </div>
+        <div class="issue">
+            <p>Tell us a bit about yourself</p>
+        </div>
+
+        <div class="container">
+            <form method="get" action="#" onsubmit="return checkforblank()">
+                <div class="form-group">
+                    <div id="fdiv" style="display:none; border-style:solid;">
+                        <p>This field is required</p>
+                    </div>
+                    <label for="fname">First name*</label>
+                    <input id="fname" name="fname" type="text" />
+                </div>
+                <div class="form-group">
+                    <div id="ldiv" style="display:none; border-style:solid;">
+                        <p>This field is required</p>
+                    </div>
+                    <label for="lname">Last name*</label>
+                    <input type="text" name="lname" id="lname" />
+                </div>
+                <div class="contact-check">
+                    <p><input type="checkbox" name="chkbox" id="phone" onClick="hide()" /><label> I would like to be
+                            contacted
+                            by
+                            TELUS for technical support.</label>
+                    </p>
+                    <div class="hidden">
+                        <label for="phone" class="hide-phone">Phone</label><br>
+                        <input type="integer" id="phone" name="phone" class="hide-phone" /><br>
+                        <label class="hide-phone">Please provide the phone number where you like to be
+                            contacted.</label>
+
+                    </div>
+
+                </div>
+                <div class="line2">
+                    <hr>
+                </div>
+                <div class="issue">
+                    <p>
+                        Tell us about the location where you experienced the issue</p>
+                </div>
+                <div class="form-group">
+                    <label for="c_name">Company name</label>
+                    <input type="text" id="c_name" name="companyname" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="c_phone">Company phone number</label>
+                    <input type="text" id="c_phone" name="cmpnyphnname" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Where did you experience the issue</label>
+                    <input type="text" id="experience" name="experience">
+                </div>
+                <div class="form-group">
+                    <label for="city">City*</label>
+                    <input type="text" id="city" name="cityname">
+                </div>
+                <div class="form-group">
+                    <label for="province">Province*</label>
+                    <input type="text" id="province" name="province" placeholder="Province">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date*</label>
+                    <input type="integer" id="date" name="date" placeholder="Date">
+                </div>
+                <div class="form-grp">
+                    <label for="hour">Time</label>
+                    <input type="integer" id="hour" name="hr" placeholder="HH">
+                    <input type="integer" id="hour" name="min" placeholder="MM">
+                </div>
+                <div class="line2">
+                    <hr>
+                </div>
+                <div class="issue">
+                    <p>Tell us about your issue</p>
+                </div>
+                <div class="form-group">
+                    <label for="network">Wi-Fi network name or SSID*</label>
+                    <input type="text" id="netwrok" name="wifi" placeholder="Choose a netwrok for SSID">
+                </div>
+                <div class="form-group">
+                    <label for="add">Device Wi-Fi MAC address*</label>
+                    <input type="text" id="add" name="address">
+                </div>
+                <div class="form-group">
+                    <label for="device">Device & OS type</label>
+                    <input type="integer" id="device" name="date" placeholder="Choose device&OS">
+                </div>
+                <div class="form-group">
+                    <label for="issue">Issue type*</label>
+                    <input type="text" id="issue" name="issuetype" placeholder="Choose issue">
+                </div>
+                <div class="contact-check">
+                    Email address or SMS number used for registration<br>
+                    <input type="checkbox" name="chkbox" id="chk-email" onClick="hide_email()" /><label for="chk-email">
+                        Email</label><br>
+                    <input type="checkbox" name="chkbox" id="chk-phone" onClick="hide_phone()" /><label for="chk-phone">
+                        Phone</label><br>
+                    <div class="hidden">
+                        <label class="hide-mail"> Email</label></br><input type="email" name="mail"
+                            class="hide-mail" /><br>
+                        <label class="hide-phn"> Phone</label></br><input type="integer" name="name" class="hide-phn" />
+                    </div>
+                </div>
+                <div class="line2">
+                    <hr>
+                </div>
+                <div class="issue">
+                    <p>Provide any additional details here</p>
+                    <p><textarea cols="105" rows="15" name="detail"></textarea></p>
+                </div>
+                <div class="privacy">
+                    <p>For more information about TELUS privacy commitment please visit -
+                        <a href="https://www.telus.com/en/about/privacy">TELUS privacy centre.</a></p>
+                </div>
+                <div class="form-group">
+                    <button id="DivShow" type="submit">Review Submission</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="help">
+        You can also get help for TELUS Public Wi-Fi from our <a
+            href="https://www.telus.com/en/qc/support/article/telus-wifi-public-hotspots">FAQ</a>, or by calling
+        1-855-200-9434 (Wi-Fi).
+    </div>
+    <footer>
+        <div color="white" class="feedback">
+            <ul>
+                <p>To help us improve this website, we'd love to hear your feedback.<a
+                        href="https://telus.eu.qualtrics.com/jfe/form/SV_9AkALsXMoIhdlhX?Q_CHL=si&pageURL=https%3A%2F%2Fwww.telus.com%2Fen%2Fbc%2Fwifisupport&previousPage=https%3A%2F%2Fwww.telus.com%2Fen%2Fbc%2Fwifisupport&pageName=wifi-issue-tracker&evar1=bc&evar2=en&evar29=&evar37=&Q_AA_PARAMS=%7B%22marketingCloudVisitorID%22%3A%2281699035684172339692194280176956192134%22%7D&Survey%20Type=Footer&CT_PID=undefined&CT_SID=undefined&CT_UID=undefined&DI_SID=undefined&intercept_ID=SI_cC8cABBK61wLP8N&Customer%20Type=Consumer&Province=null">Tell
+                        us what you think.</a></p>
+            </ul>
+        </div>
+
+        <div class="all-list">
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.telus.com/en/about?linktype=ge-footer">About Us</a></br>
+                    <a
+                        href="https://www.telus.com/en/about/company-overview/accessibility?linktype=ge-footer">Accessibility</a></br>
+                    <a href="https://www.telus.com/en/about/careers?linktype=ge-footer">Careers</a></br>
+                    <a href="https://www.telus.com/en/about/company-overview/community-investment?linktype=ge-footer">We
+                        Give Where We Live</a></br>
+                    <a
+                        href="https://www.telus.com/en/about/policies-and-disclosures?linktype=ge-footer">Policies</a></br>
+                    <a href="https://www.telus.com/en/bc/outages?INTCMP=VAN_status&linktype=ge-footer">TELUS Service
+                        Status</a>
+                </div>
+                <div class="column">
+                    <a href="https://www.telus.com/en/bc/support?linktype=ge-footer">Support</a></br>
+                    <a href="https://www.telus.com/en/bc/support/contact-us?linktype=ge-footer">Contact Us</a></br>
+                    <a href="https://forum.telus.com/?linktype=ge-footer">Neighbourhood</a></br>
+                    <a href="https://stores.telus.com/en?linktype=ge-footer">Find A Store</a></br>
+                    <a href="https://www.telus.com/en/about/policies-and-disclosures/user-terms?linktype=ge-footer">User
+                        Terms</a></br>
+                    <a href="https://www.telus.com/en/bc/support/topic/service-terms?linktype=ge-footer">Service
+                        Terms</a>
+                </div>
+                <div class="column">
+                    <p>
+                        <a
+                            href="https://www.telus.com/en/bc/support/article/the-internet-code-of-conduct?linktype=ge-footer">TELUS
+                            & CRTC Internet Code</a></br>
+                        <a href="https://crtc.gc.ca/eng/internet/codesimpl.htm?linktype=ge-footer">Internet Code,
+                            Simplified</a></br>
+                        <a
+                            href="https://www.telus.com/en/about/company-overview/accessibility/crtc-wireless-code-of-conduct">TELUS
+                            & CRTC Wireless Code</a></br>
+                        <a href="https://crtc.gc.ca/eng/phone/mobile/codesimpl.htm?linktype=ge-footer">Wireless Code,
+                            Simplified</a></br>
+                        <a href="https://www.telus.com/en/about/privacy?linktype=ge-footer">Privacy / Cookies</a></br>
+                        <a href="https://www.telus.com/en/about/security?linktype=ge-footer">Security</a>
+                </div>
+                <div class="column">
+                    <a href="https://www.telus.com/en/digital?linktype=ge-footer">TELUS Digital</a></br>
+                    <a
+                        href="https://www.telusinternational.com/?linktype=ge-footer&_ga=2.257140747.1045681398.1594324015-1260220045.1594324015">TELUS
+                        International</a></br>
+                    <a href="https://www.telus.com/en/partner/?linktype=ge-footer">TELUS Partner Solutions</a></br>
+                    <a href="https://www.telus.com/en/about/procurement?linktype=ge-footer">TELUS Procurement</a></br>
+                    <a href="https://webmail.telus.net/?linktype=ge-footer">TELUS Webmail</a></br>
+                    <a href="https://www.telus.com/en/wise?linktype=ge-footer">TELUS Wise</a>
+                </div>
+            </div>
+            <div class="last-line">
+                <hr>
+            </div></br>
+            <div class="logo-last">
+                <img
+                    src="//images.ctfassets.net/fikanzmkdlqn/1LW10x1QLC2esi6YgAAKia/56e4e0773a6922432919cec5dbe7a87e/Logo_TELUS_white.svg" /><span>@2020
+                    TELUS</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html> 
