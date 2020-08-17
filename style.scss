@@ -1,0 +1,298 @@
+$lightpink: #D8BFD8;
+$textalign: center;
+$purple: #4B286D;
+$white: #FFFFFF;
+$font: Arial, Helvetica, sans-serif;
+$gray: #54595F;
+$style: flex;
+$black: #2A2C2E;
+$green: #2B8000;
+$red: #FF0000;
+$yellow: #FFFFE0;
+$beige: #F7F7F8;
+$pointer: pointer;
+
+
+/* Use the variables */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  width: 100%;
+  .header {
+    background: $lightpink;
+    color: $purple;
+    text-align: $textalign;
+    line-height: 2rem;
+  }
+  .navbar-links ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: $purple;
+    padding-left: 500px;
+    padding-right: 150px;
+    ul li {
+      float: right;
+    }
+  }
+  .navbar-links li {
+    float: left;
+    border-right: 1px solid $gray;
+    a {
+      display: block;
+      color: $white;
+      text-align: $textalign;
+      padding: 8px 14px;
+      text-decoration: none;
+      font-size: 14px;
+      a.active {
+        color: $purple;
+        .active {
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .upper-head ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 300px;
+  }
+  .upper-head li {
+    float: left;
+    a {
+      display: block;
+      text-align: $textalign;
+      padding: 16px 30px;
+      text-decoration: none;
+      font-size: 16px;
+      color: $gray;
+    }
+    img {
+      padding: 14px 14px;
+    }
+  }
+  input[type=text] {
+    width: 50px;
+    box-sizing: border-box;
+    border: 2px solid $white;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: $white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 4px;
+    transition: width 0.4s ease-in-out;
+  }
+  input[type=text]:focus {
+    width: 50%; 
+  } 
+  section{
+    display: $style;
+    .left-header{
+      width: 50rem;
+      margin-left: 20rem;
+      margin-top: 6rem;
+      h1{
+        font-size: 4.5rem;
+        color: $purple;
+        text-align: left;
+        font-weight: 100;
+      }
+      p{
+        color: $gray;
+        font-weight: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+    .right-header img {
+      float: right;
+      width: 25rem; 
+      margin-right: 6rem;
+      margin-top: 6rem;
+    }
+  }
+  .line {
+    margin-top: 10rem;
+    margin-left: 18rem;
+    margin-right: 24rem;
+    color: $gray;
+  }
+  .req {
+    padding-left: 19rem;
+    padding-top: 3rem;
+  }
+  .issue{
+    font-size: 1.8rem;
+    padding-left: 19rem;
+    padding-top: 1rem;
+    color: $purple;
+  }
+  .form-group {
+    height: 6.5rem;
+    padding-left: 19rem;
+    font-size: 1.2rem;
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+    input {
+      min-width: 45rem;
+      height: 3rem;
+      border-radius: 5px;
+      display: block;
+      border: 1px solid $black;
+      font-size: large;
+    }
+    i {
+      position: absolute;
+      top: 40px;
+      right: 10px
+    }
+    small {
+      visibility: hidden;
+    }
+    .bt {
+      background-color: $green;
+      cursor: $pointer;
+      height: 3.5rem;
+      min-width: 18%;
+      text-align: $textalign;
+      font-size: 1.1rem;
+      color: $white;
+      border-radius: 8px;
+      border: 2px solid $green; 
+    }
+    .bt:hover {
+        background-color: $white;
+        color: $green;
+    }
+  }
+  .form-grp {
+    height: 6.5rem;
+    padding-left: 19rem;
+    font-size: 1.2rem;
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+    input {
+      min-width: 22rem;
+      height: 3rem;
+      border-radius: 5px;
+      border: 1px solid $black;
+    }
+  }
+  .contact-check {
+    padding-left: 19rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  .hidden {
+    line-height: 2rem;
+    input{
+      min-width: 45rem;
+      min-height: 2.5rem;
+      border-radius: 5px;
+      border: 1px solid $black;
+    }
+  }
+  .line2 {
+    margin-left: 18rem;
+    margin-right: 53rem;
+    color: $gray;
+  }
+  .privacy {
+    padding-left: 19rem;
+    font-size: 1.1rem
+  }
+  .hide-phn {
+    display: none;
+  }
+  
+  .hide-mail {
+    display: none;
+  }
+  .hide-phone {
+    display: none;
+  }
+  .help{
+    margin-top: 4rem;
+    padding-left: 19rem;
+    color: $gray;
+    a{
+      text-decoration: underline;
+      color: $purple;
+    }
+  }
+  .feedback{
+    background-color: $beige;
+    height: 2rem;
+    padding-left: 19rem;
+    a{
+      text-align: $textalign;
+      text-decoration: underline;
+      color: $gray;
+      line-height: 2.5;
+    }
+    p{
+      height: 5px;
+      color: $gray;
+    }
+  }
+  .all-list{
+    background-color: $black;
+    padding-left: 11rem;
+    .row{
+      margin-left: 7rem;
+      .column{
+        padding: 2rem;
+        text-align: left;
+        display: table-cell;
+        a{
+          font-size: 1rem;
+          color: $beige;
+          line-height: 1.8;
+          font-family: sans;
+          padding: 1rem;
+          text-decoration-line: none;
+        }
+      }
+    }
+  }
+  .last-line{
+    margin-right: 28rem;
+    margin-left: 1rem;
+    padding-left: 6rem;
+  }
+  .logo-last {
+    margin-left: 7rem;
+    height: 3rem;
+    img{
+      height: 1.8rem;
+    }
+    span{
+      margin-left: 56rem;
+      color: $beige;
+    }
+  }
+  .line-height{
+    line-height: 1.5;
+  }
+  .error {
+    color: $red;
+    font-size: 90%;
+    background-color: $yellow;
+    margin-right: 55rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    section {
+      display: inline-block;
+    }
+  }
+}
