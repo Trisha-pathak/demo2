@@ -33,6 +33,7 @@
     margin-bottom: 3rem;
     margin-right: 1rem;
     text-align: right;
+    overflow: hidden;
   }
   
   .buttons {
