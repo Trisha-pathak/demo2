@@ -1,0 +1,62 @@
+
+.navbar
+{
+    margin: 0 auto;
+	padding: 0;
+    text-align: right;
+  
+}
+.navbar .border {
+    padding: 1em;
+}
+.navbar a
+{
+    color: #fff;
+    text-decoration: none;
+    font: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px 12px;
+    padding: 10px 16px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.bg
+{
+    background:	#2F4F4F;
+}
+.border a:before, .border a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: 	#000000;
+    transition: all 0.3s;
+}
+
+.border a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.border a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.border a:hover:before
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+.border a:hover:after 
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
